@@ -13,5 +13,8 @@ $LOAD_PATH.unshift File.expand_path('../app', File.dirname(__FILE__))
 require 'validators/numeric_validator'
 require 'models/tax_rate'
 require 'models/monthly_pay'
+require 'models/month_period'
+require 'models/employee'
+require 'pay_slip'
 require 'calculators/tax_calculator'
 require 'calculators/super_calculator'
