@@ -6,7 +6,7 @@ class NumericValidator
       if non_negative
         raise ArgumentError, "#{param} should be non_negative." unless (param.is_a? Numeric) && param >= 0
       else
-        raise ArgumentError, "#{param} should be non_negative." unless (param.is_a? Numeric) && param.negative?
+        raise ArgumentError, "#{param} should be non_negative." unless (param.is_a? Numeric) && param < 0
       end
     end
   end
