@@ -45,3 +45,19 @@ David Rudd,01 March – 31 March,5004,922,4082,450
 As part of your solution:
 - List any assumptions that you made in order to solve this problem.  
 - Provide instructions on how to run the application.
+
+## How to run it
+
+### input CSV format
+Payment start date is one date not a range.
+```
+first name,last name,annual salary,super rate (%),payment start date
+David,Rudd,60050,9%,01-03-2018
+Ryan,Chen,120000,10%,01-03-2018
+```
+Ruby 2.4.1 is required.
+
+1. run `bundle install`
+2. run `rake quality` for static code checking
+3. run `rake spec` for running test cases
+4. run `ruby app/pay_slips_processor.rb input.csv output.csv` to generate pay slips. Make sure to use correct files to replace `input.csv` and `output.csv`.
