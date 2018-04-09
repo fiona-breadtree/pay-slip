@@ -3,6 +3,7 @@
 require 'date'
 
 class MonthPeriod
+  attr_reader :year
   def initialize(start_date_str)
     month_start_date = Date.parse(start_date_str)
     @month = month_start_date.mon

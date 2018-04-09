@@ -10,7 +10,7 @@ class PaySlip
 
   def generate
     monthly_pay = MonthlyPay.new(@employee.annual_salary, @employee.super_rate,
-                                 @tax_calculator, @super_calculator)
+                                 @tax_calculator, @super_calculator, @payment_period.year)
 
     {
       name: "#{@employee.first_name} #{@employee.last_name}",
