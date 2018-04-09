@@ -11,7 +11,7 @@ class MonthPeriod
   end
 
   def to_s
-    "01 #{name_of_month} - #{days_in_month} #{name_of_month}"
+    "01 #{name_of_month} - #{days_in_month} #{name_of_month}, #{@year}"
   end
 
   private
